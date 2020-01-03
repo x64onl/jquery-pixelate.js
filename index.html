@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>jQuery Pixelate.js</title>
+    <meta name="description" content="An extensible jQuery plugin for pixelating images.">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <header>
+        <h1><a href="https://github.com/dpstrange/jquery-pixelate.js">Pixelate.js</a></h1>
+        <p>An extensible jQuery plugin for pixelating images.</p>
+    </header>
+    <main>
+      <section>
+        <img class="pixelate" src="img/hello-world.jpg">
+        <input class="slider" type="range" min="1" max="100" value="50">
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/pixelate.js"></script>
+    <script>
+        $(document).ready(function() {
+            var intValue = $("input").val();
+
+            $('.pixelate').pixelate({
+                'focus': 0.01 * intValue
+            });
+            
+            $("input").get(0).addEventListener('change', function() {
+                $('.pixelate').pixelate({
+                    'focus': 0.01 * this.value
+                });
+            });
+        });
+    </script>
+  </body>
+</html>

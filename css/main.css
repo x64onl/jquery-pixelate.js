@@ -1,0 +1,26 @@
+body {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main section {
+    margin: 2.5rem 0 0 0;
+}
+
+img, canvas {
+    width: 100%;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    filter: contrast(150%);
+    filter: saturate(150%);
+}
+
+.slider {
+    width: 100%;
+    margin: 1rem 0 0 0;
+}
