@@ -40,3 +40,7 @@ $(document).ready(function() {
 # Credit
 
 Groundwork by [jmduke](https://github.com/jmduke/jquery.pixelate.js).
+
+# License
+
+[MIT License](LICENSE)
