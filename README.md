@@ -14,7 +14,7 @@ Include jQuery and pixelate.js:
 Apply the `pixelate()` function to selected elements like so:
 
 ```js
-$(document).ready(function() {
+$(window).on("load", function() {
     $('.pixelate').pixelate();
 });
 ```
@@ -29,7 +29,7 @@ $(document).ready(function() {
 Options can be overridden like so:
 
 ```js
-$(document).ready(function() {
+$(window).on("load", function() {
     $('.pixelate').pixelate({
         'focus': 0.75,
         'canvasID': "newCanvasID"
