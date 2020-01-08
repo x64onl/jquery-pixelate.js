@@ -19,6 +19,7 @@
                 height = this.height;
 
             $(this).hide();
+            $(this).parent().children("canvas").remove();
             $(this).after("<canvas id='" + id + "' height='" + height +"' width='" + width +"'>");
 
             var context = $("#" + id).get(0).getContext("2d");
