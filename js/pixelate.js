@@ -15,8 +15,8 @@
         
         return this.each(function(index) {
             var id = settings.canvasId + "-" + index,
-                width = this.width,
-                height = this.height;
+                width = this.naturalWidth,
+                height = this.naturalHeight;
 
             $(this).hide();
             $(this).parent().children("canvas").remove();
